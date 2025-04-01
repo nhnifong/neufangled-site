@@ -2,3 +2,13 @@ site_name: Cranebot/Stringman Docs
 site_url: https://nhnifong.github.io/neufangled-site
 theme:
   name: material
+  features:
+    - navigation.footer
+extra:
+  social:
+    - icon: fontawesome/solid/hand-holding-dollar 
+      link: https://ko-fi.com/neufangled
+    - icon: fontawesome/brands/github
+      link: https://github.com/nhnifong/cranebot3-firmware/tree/main
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@overengineer7691

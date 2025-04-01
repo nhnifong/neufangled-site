@@ -36,7 +36,7 @@ We take in measurements of the locations of aruco markers seen by the cameras, m
 ## Cost
 
 
-$699 - Hardware kit
+$692 - Hardware kit
 
 All the mechanical parts can be 3D printed with adequate strength and precision.
 Building the robot requires some experience soldering, assembling small objects, and working from a linux command line. If you're not sure if that's for you, take a look at the build guides to get an idea of what it involves.
