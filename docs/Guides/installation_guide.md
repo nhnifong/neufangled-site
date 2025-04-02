@@ -1,5 +1,5 @@
-# Installtion Guide
+# Installation Guide
 
-Pilot run
+### Hardware Version: Pilot run
 
 Hardware installation of a preassembled or diy assembled Stringman robot.

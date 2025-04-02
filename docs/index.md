@@ -4,6 +4,8 @@ Stringman Pilot Launch
 
     demo video placeholder
 
+![Image](images/PXL_20250318_233318194.jpg)
+
 ## Purpose
 
 Create a robot for under $1000 that can pick up clutter in your room
