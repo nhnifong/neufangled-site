@@ -1,6 +1,6 @@
 # Anchor Build Guide
 
-### Hardware Version: Pilot run
+Hardware Version: Pilot run
 
 Print the long hexagonal screwdriver bit holder. You will need a brim when printing it. Most precision screwdrivers come with a set of bits with 4mm hex shanks. This is designed to fit those but be long enough to be held in a drill from the outside of this frame.
 

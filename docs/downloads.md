@@ -1,6 +1,6 @@
 # Downloads
 
-## Source
+## Controller Software
 
 The source for both the servers which run on the raspberri pi's in the robot components, and the desktop control panel are contained in the same repository.
 
