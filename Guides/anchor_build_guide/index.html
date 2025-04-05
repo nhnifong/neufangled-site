@@ -1,0 +1,850 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://nhnifong.github.io/neufangled-site/Guides/anchor_build_guide/">
+      
+      
+        <link rel="prev" href="../../downloads/">
+      
+      
+        <link rel="next" href="../desktop_setup_guide/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>Anchor Build Guide - Cranebot/Stringman Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#anchor-build-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cranebot/Stringman Docs" class="md-header__button md-logo" aria-label="Cranebot/Stringman Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cranebot/Stringman Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Anchor Build Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cranebot/Stringman Docs" class="md-nav__button md-logo" aria-label="Cranebot/Stringman Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cranebot/Stringman Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Neufangled Robotics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../downloads/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Downloads
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Anchor Build Guide
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Anchor Build Guide
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#spool-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spool installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motor-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-supply-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power supply circuit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-power-anchors-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      For power anchors only
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raspberry-pi-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi installation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../desktop_setup_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Desktop Setup Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gripper_build_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gripper Build Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Final Installation Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../power_line_build_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Powerline/Gantry Build Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../print_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Print Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../raspi_setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Raspberry Pi Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Usage Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#spool-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spool installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motor-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-supply-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power supply circuit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-power-anchors-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      For power anchors only
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raspberry-pi-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raspberry Pi installation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="anchor-build-guide">Anchor Build Guide</h1>
+<p>Hardware Version: Pilot run</p>
+<p>Print the long hexagonal screwdriver bit holder. You will need a brim when printing it. Most precision screwdrivers come with a set of bits with 4mm hex shanks. This is designed to fit those but be long enough to be held in a drill from the outside of this frame.</p>
+<p><a class="glightbox" href="../images/ag/image4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image4.png" width="45%" /></a></p>
+<p>Using small dabs of superglue around the ‘shelf’ on the spool, glue the two sides of the spool together. The ‘cup’ of the ring gear should open outwards as shown.<br />
+<a class="glightbox" href="../images/ag/image16.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image16.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image33.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image33.png" width="45%" /></a></p>
+<p>Cut away the supporting bridge from this U-shaped region in the frame<br />
+It is unnecessary to cut the bridge out of the hole near it, but harmless to do so.<br />
+Notice the two protruding ribs in the middle of the anchor frame. We will refer to them as the thick rib, and the thin rib. The spool goes between them.<br />
+<a class="glightbox" href="../images/ag/image15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image15.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image18.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image18.png" width="45%" /></a></p>
+<p>If the spool is dry by now, press a 4x13x5 bearing into the hole on the ring gear side.<br />
+One of the bearings in your kit will have a 4x12mm steel tube pressed into it. Put <strong>two</strong> m4 washers onto the tube and press this into the hole on the other side of the spool.</p>
+<p><a class="glightbox" href="../images/ag/image21.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image21.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image10.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image25.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image25.png" width="45%" /></a></p>
+<p>Install the m4 x 25 screw partway into the center hole in the thick rib of the anchor frame. You can use the printed screwdriver with a drill to do it more easily.<br />
+Insert all four M3x10 motors screws in their holes. It’s a lot harder to get to them later, but if one falls out, it’s not impossible. Try to keep them from falling out in the next step.</p>
+<p><a class="glightbox" href="../images/ag/image32.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image32.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image24.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image24.png" width="45%" /></a></p>
+<h2 id="spool-installation">Spool installation</h2>
+<p>Slide the spool into place. The spool’s geared side faces the thick rib. make sure the protruding bearing is completely seated in its slot, and appears centered from the outside.<br />
+While holding the spacer in place with <a href="https://www.amazon.com/dp/B001BU9MLG">cross locking angled tweezers</a>, Tighten the M4 center screw all the way down. It will support the inner race of one of the bearings.<br />
+That was the hardest step, it’s downhill from here.</p>
+<p>Press the bearing retainer into the void that remains in the thin rib, and put a very small dab of superglue on it. Not near anything that moves.</p>
+<p><a class="glightbox" href="../images/ag/image8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image8.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image12.png" width="45%" /></a></p>
+<p>You can see that one of my four M3x10 motor screws fell out. No worries, It is still possible to put it back, I will show you in the next step. Just fetch it out of the gear with your tweezers.</p>
+<h2 id="motor-installation">Motor installation</h2>
+<p>If it has not been done already, Install the short 4-wire jumper of the MKS_SERVO42C between the board and stepper. There is only one possible way it will fit.<br />
+When handling the motor be careful not to ever place it on the PCB. the three buttons can break off.<br />
+<a class="glightbox" href="../images/ag/image28.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image28.png" width="45%" /></a></p>
+<p>Inspect the printed drive gear for flaws such as warping. The quality of this part is very important for keeping noise down. If you see any flaw at all, reprint it. See the print guide for recommended print settings of all parts.<br />
+Screw a flat head M3x4 set screw most of the way into the hole on the drive gear.<br />
+Press the drive gear all the way onto the motor shaft with the set screw aligned with the D-shaft’s flat face. Tighten the set screw.<br />
+Apply a small amount of silicone grease to the drive gear<br />
+<a class="glightbox" href="../images/ag/image3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image3.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image14.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image19.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image19.png" width="45%" /></a></p>
+<p>Place the motor in the frame in the orientation shown below and seat it into place, you might have to wiggle the spool to make the gear teeth mesh.<br />
+Using the printed screwdriver, tighten all four screws. Two of the screws will align with the holes in the sool, and two will align with a small indentation on the outer limits of the spool.<br />
+If you do not know which bit fits the screws, find another m3 in your kit and check that.</p>
+<p><a class="glightbox" href="../images/ag/image31.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image31.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image6.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image2.png" width="45%" /></a></p>
+<p>If you have to insert one of your M3x10 screws at this step, you can place it on top of your bit, holding it vertically, and move the part straight down on top with the spool lined up. If that’s too much trouble, then whatever, three screws is enough anyways.</p>
+<p><a class="glightbox" href="../images/ag/image1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image1.png" width="45%" /></a></p>
+<p>Spin your spool slowly and confirm it makes a full rotation without excessive friction. If you feel bumps only when moving fast, ignore that, it’s an electrical effect.</p>
+<p><a class="glightbox" href="../images/ag/image17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image17.png" width="45%" /></a></p>
+<h2 id="power-supply-circuit">Power supply circuit</h2>
+<p>Screw a nut onto the DC barrel Jack. (it should come pre-installed, but may fall off in shipping. It’s important this is done before the wiring.</p>
+<p><a class="glightbox" href="../images/ag/image22.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image22.png" width="45%" /></a></p>
+<p>Get one DC step down converter from your kit. The exact converter you receive may differ in appearance.<br />
+Connect the step down regulator’s inputs to the 24v of the jack. (it’s long leg is negative) with about 2.5 cm of wire between the jack and regulator.<br />
+Locate the long cable that came with the MKS_SERVO42C. It has two different ends that are mirrors of each other. Find the end that exactly matches this photo, and cut short all but the red and black wires. We will not be using the others.<br />
+Solder the black and red leads also to the barrel jack. The motor will receive 24v from this connector.<br />
+Find one of the pre-made double ended red-black-orange-blue connectors. The only two hanging wires on these should be the red and the black coming from the 4-pin connector. Solder these to the output of the DC step down converter.<br />
+With a multimeter attached to the output of the DC step down converter, turn the adjustment screw until you get 5V on the output.<br />
+<a class="glightbox" href="../images/ag/image27.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image27.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image26.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image26.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image30.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image30.png" width="45%" /></a></p>
+<p>Place this wiring harness into the frame as shown. Push the barrel jack into the U shaped recess and tighten the nut.</p>
+<p><a class="glightbox" href="../images/ag/image35.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image35.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image9.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image9.png" width="45%" /></a></p>
+<p>Plug the wide white plug into the stepper motor control board, and the black serial plug into the small straight standoffs adjacent to it.<br />
+The serial plug should be connected such that the blue wire in on the pin labeled TX and the orange wire is on the pin labeled RX<br />
+Lead the final 4 pin plug through the hole to the other side of the frame.<br />
+The power supply circuit is finished.</p>
+<h2 id="for-power-anchors-only">For power anchors only</h2>
+<p>One of the anchors in your robot needs to supply power to the gripper. It doesn’t matter which one, but you need to install the power components on it before the raspberry pi.<br />
+Power is supplied to the gripper via a pvc sheathed wire that takes the place of the fishing line, and is transferred via a slip ring at each end.<br />
+Take a slip ring and identify the wires that come out of the rotor. Insert these two wires into the metal tube that leads into the center of the spool.<br />
+Wiggle and push the wires until they come out of the outlet in the spool’s center. Pull them the rest of the way through. Seat the slip ring in its place and secure it with three M3x4 screws.<br />
+Leave the wires that come out of the spool center hanging for now.</p>
+<p>Lead the wires from the back end of the slip ring around the frame to the 5v regulator. Trim excess length and solder them to the regulator’s input side. Note, we want the 24v power going into the slip ring, not the 5v.</p>
+<h2 id="raspberry-pi-installation">Raspberry Pi installation</h2>
+<p>Use the <a href="https://www.raspberrypi.com/software/">raspberry pi sd card imager tool</a> to create a card that is pre configured with your wifi password, ssh turned on, and a username you can login with.<br />
+Setting “pi” as the username and password is standard practice for people who know that real security is only possible if you throw all the electronics in the lake</p>
+<p>Insert the SD card into the Raspberry Pi Zero 2 W. Install an aluminum heatsink on the SOC.<br />
+Solder a 4 pin straight header on the pins shown in the image.<br />
+Screw the raspberry pi down to the frame with four m 2.5 x 4 screws. Note the direction in the photo</p>
+<p><a class="glightbox" href="../images/ag/image23.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image23.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image5.png" width="45%" /></a></p>
+<p>Connect the 4 pin plug to the straight header with the V+ (red) wire closest to the SD card.</p>
+<p><a class="glightbox" href="../images/ag/image7.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image7.png" width="45%" /></a></p>
+<p>Open the Raspberry Pi camera Module 3. Take care to ground yourself before handling the camera. <br />
+Take out the “mini” ribbon and connect its wide end to the camera. The black painted side of the ribbon goes towards the back side of the PCB and the gold plated side goes towards the camera lens.<br />
+To attach a ribbon cable, gently pull out both sides of the plastic retaining clip, insert the ribbon end, and push the retainer back into place.<br />
+Discard any other ribbons that shipped with the camera.</p>
+<p><a class="glightbox" href="../images/ag/image13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image13.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image34.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image34.png" width="45%" /></a></p>
+<p>Mount the camera with two M2x4 screws with the ribbon facing upwards.</p>
+<p>Fold the ribbon back and forth to fit it entirely inside the frame and connect it to the raspberry pi with the black face up.<br />
+Be careful with the raspberry pi’s ribbon cable retention clip, it is extremely delicate.</p>
+<p><a class="glightbox" href="../images/ag/image20.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image20.png" width="45%" /></a>
+<a class="glightbox" href="../images/ag/image11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image11.png" width="45%" /></a></p>
+<p>Assembly is complete!<br />
+Plug in your unit to 24v power and confirm both the motor control screen and raspi green light are on.<br />
+(Do not run motor calibration, it has been done already and can only be done with a bare shaft)<br />
+Proceed with all the raspberry pi software setup now before continuing with the rest of the physical installation.</p>
+<p><a class="glightbox" href="../images/ag/image29.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" loading="lazy," src="../images/ag/image29.png" width="45%" /></a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../downloads/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Downloads">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Downloads
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../desktop_setup_guide/" class="md-footer__link md-footer__link--next" aria-label="Next: Desktop Setup Guide">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Desktop Setup Guide
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://ko-fi.com/neufangled" target="_blank" rel="noopener" title="ko-fi.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M312 24v10.5c6.4 1.2 12.6 2.7 18.2 4.2 12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17c-10.9-2.9-21.1-4.9-30.2-5-7.3-.1-14.7 1.7-19.4 4.4-2.1 1.3-3.1 2.4-3.5 3-.3.5-.7 1.2-.7 2.8v.6c.2.2.9 1.2 3.3 2.6 5.8 3.5 14.4 6.2 27.4 10.1l.9.3c11.1 3.3 25.9 7.8 37.9 15.3 13.7 8.6 26.1 22.9 26.4 44.9.3 22.5-11.4 38.9-26.7 48.5-6.7 4.1-13.9 7-21.3 8.8V232c0 13.3-10.7 24-24 24s-24-10.7-24-24v-11.4c-9.5-2.3-18.2-5.3-25.6-7.8-2.1-.7-4.1-1.4-6-2-12.6-4.2-19.4-17.8-15.2-30.4s17.8-19.4 30.4-15.2c2.6.9 5 1.7 7.3 2.5 13.6 4.6 23.4 7.9 33.9 8.3 8 .3 15.1-1.6 19.2-4.1 1.9-1.2 2.8-2.2 3.2-2.9.4-.6.9-1.8.8-4.1v-.2c0-1 0-2.1-4-4.6-5.7-3.6-14.3-6.4-27.1-10.3l-1.9-.6c-10.8-3.2-25-7.5-36.4-14.4-13.5-8.1-26.5-22-26.6-44.1-.1-22.9 12.9-38.6 27.7-47.4 6.4-3.8 13.3-6.4 20.2-8.2L264 24c0-13.3 10.7-24 24-24s24 10.7 24 24m256.2 312.3c13.1 17.8 9.3 42.8-8.5 55.9l-126.6 93.3c-23.4 17.2-51.6 26.5-80.7 26.5H32c-17.7 0-32-14.3-32-32v-64c0-17.7 14.3-32 32-32h36.8l44.9-36c22.7-18.2 50.9-28 80-28H352c17.7 0 32 14.3 32 32s-14.3 32-32 32h-80c-8.8 0-16 7.2-16 16s7.2 16 16 16h120.6l119.7-88.2c17.8-13.1 42.8-9.3 55.9 8.5M193.6 384h-.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/nhnifong/cranebot3-firmware/tree/main" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/@overengineer7691" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
