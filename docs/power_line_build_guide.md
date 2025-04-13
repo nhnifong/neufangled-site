@@ -8,9 +8,10 @@ This is meant to be done **before** [final installation](installation_guide.md).
 Tools needed:  
 
  - Scissors
- - Wire strippers
- - Super glue
+ - Tape measure
+ - Wire strippers for 30awg
  - Lighter or heat gun for heat shrink tubing
+ - Soldering station with helping hands
 
 
 !!! tip "Warning"
@@ -23,6 +24,8 @@ The gantry refers to a passive component that hangs where all the anchor lines m
 
 Print the components of the gantry in a white or light colored filament with two walls and 12% cubic infill. Attach them together with four M3x4 screws. 
 
+![](images/gantry/image10.png){ loading=lazy, width=45% }
+![](images/gantry/image11.png){ loading=lazy, width=45% }
 
 # Stickers
 
@@ -32,27 +35,115 @@ You should have received four copies of the “gantry_front” aruco marker on s
 ![](images/gantry/image4.png){ loading=lazy, width=45% }
 
 To more easily remove the backing, make a gentle cross cut into the corner of the backing with the knife with only enough pressure to cut the backing, but not the sticker.
-Put one sticker on each face of the gantry. They must be oriented correctly. The word “gantry_front” is printed at the bottom of each. Note that the top of the gantry is the part where the second part was screwed on. Refer to this image of the marker for the correct orientation
+Put one sticker on each face of the gantry. They must be oriented correctly. The word “gantry_front” is printed at the bottom of each. Note that the top of the gantry is the part where the second part was screwed on. Refer to this image for the correct orientation
 
-![](images/gantry/image2.png){ loading=lazy, width=15% }
+![](images/gantry/image2.png){ loading=lazy, width=45% }
 
 ## Fishing Lines
 
-Cut three 16 inch (40cm) lengths of fishing line. Tie each one to the keyring with a [palomar knot](https://www.animatedknots.com/palomar-knot).
-Before performing this assembly, I reccomend practicing the palomar knot on regular rope on something else.
+Remove the swivels from each of the fishing speed clips and set them aside.
+Put the three clips onto the keyring.
+
+![](images/gantry/image12.png){ loading=lazy, width=45% }
+
+Cut three 10m lengths of braided fishing line from your supply. Tie a swivel on the end of each one with a [palomar knot](https://www.animatedknots.com/palomar-knot).
 
 ![](images/gantry/image5.png){ loading=lazy, width=45% }
-![](images/gantry/image6.png){ loading=lazy, width=45% }
 
-Tie a quick release hook to each one, about 6cm to 10cm from the ring. Tie onto the hook, not the swivel.
-Why trying to create a palomar knot at a given length, you may have to pull all the slack in the loop out from the tail. Once the knot is right, you have to pull pretty hard to do that, grabbing the tail with pliers is sometimes necessary, but try not to grab the working line with pliers as it would signifigantly weaken it.
+Tie the other end of the line to the spool on an anchor until all three of the regular anchors have lines.
 
-![](images/gantry/image7.png){ loading=lazy, width=45% }
-![](images/gantry/image8.png){ loading=lazy, width=45% }
-![](images/gantry/image9.png){ loading=lazy, width=45% }
+TODO: add image.
 
 ## Power line
 
-Thread 2 meters of your power wire through the 10mm keyring. This should leave 8 meters on the other end. Thread the short end through the keyring again, and tie a double 
-Black wire is pictured here, but I will be supplying white in future kits.
-Lead the 2 meter tail from the top, down through the center hole of the gantry. Lead the 8 meter tail out through one of the side holes. The keyring will ultimately rest in the center of the object, but for now, pull it out a bit where you can reach it while tying on other lines.
+You were supplied with a custom made counter-twisted wire consisting of two 30awg conductors and some 40lb test braided fishing line.
+Lay it out flat on the floor and gently shake loose any twists or kinks.
+
+Thread 2 meters of your power wire through the 10mm keyring. This should leave 8 meters on the other end. Thread the short end through the keyring again, and gently knot it so the keyring is secured at the 2 meter mark.
+
+![](images/gantry/image6.png){ loading=lazy, width=45% }
+![](images/gantry/image7.png){ loading=lazy, width=45% }
+
+Thread the 2m end of power line down through the center hole of the gantry. Pull it through till the keyring gets stopped in the cone, and then thread the 8m end out through one of the side holes.
+
+![](images/gantry/image8.png){ loading=lazy, width=45% }
+![](images/gantry/image9.png){ loading=lazy, width=45% }
+
+
+### Anchor Spool Connection
+
+Thread the long (8m) end of the power line through the back of a cover matching the configuration of anchor you installed the slip ring on.
+
+![](images/gantry/image19.png){ loading=lazy, width=45% }
+
+The Fishing line must take any tension in the event that the spool becomes completely unwound, so it must be tied off to the spool.
+untwist back about 10 cm of fishing line. Insert the end into the small hole in the spool, such that it comes back out of the adjacent larger hole. Tie off the fishing line with a triple square knot. You may need multiple pairs of tweezers if not a $100M surgery robot.
+
+![](images/gantry/image20.png){ loading=lazy, width=45% }
+![](images/gantry/image21.png){ loading=lazy, width=45% }
+
+Trim back the black and white wires of the powerline so that they end where the wires of the slip ring end, with just a little slack. the length should be such that the fishing line bears any tension.
+
+![](images/gantry/image22.png){ loading=lazy, width=45% }
+
+Prepare one narrow heat shrink tube cut in two, and one whole larger heatshrink tube. Put them onto the wires before beginning the splice.
+
+![](images/gantry/image15.png){ loading=lazy, width=45% }
+
+Splice both conductors. black to black, and red to whatever the other one is.
+
+![](images/gantry/image23.png){ loading=lazy, width=45% }
+
+Shrink the small tubes for each conductor first, then the large heat shink tube around them both.
+
+!!! tip "Warning"
+
+    Keep flame or heat well away from the fishing line. If you damage it with flame, even if it appears intact, cut the splice out and start over.
+
+After completing the splice, manually wind a few turns of the powerline onto the spool in the pictured direction. 
+
+![](images/gantry/image24.png){ loading=lazy, width=45% }
+
+### Gripper Spool Connection
+
+Thread the short end of the power line that comes out of the bottom of the gantry into the hole in the top of the gripper. Pushing it so it comes around the bottom of the spool and out the window. Pull out enough to work with (30cm)
+
+![](images/gantry/image13.png){ loading=lazy, width=45% }
+![](images/gantry/image14.png){ loading=lazy, width=45% }
+
+!!! tip "Note"
+
+    Though this step is not pictured at this time, the correct process is documented above where the power line is joined to the anchor spool.
+
+Untwist back about 10 cm of fishing line. Insert the end into the small hole in the spool, such that it comes back out of the adjacent larger hole. Tie off the fishing line with a triple square knot. Trim back the conductors of the powerline so that they end where the wires of the slip ring end.
+
+TODO: ADD PHOTO.
+
+Prepare one narrow heat shrink tube cut in two, and one whole larger heatshrink tube. Put them onto the wires before beginning the splice.
+
+![](images/gantry/image15.png){ loading=lazy, width=45% }
+
+Splice both conductors. black to black, and red to whatever the other one is.
+
+![](images/gantry/image16.png){ loading=lazy, width=45% }
+
+Shrink the small tubes for each conductor first, then the large heat shink tube around them both. Image incorrectly pictures the fishing line not tied off the spool.
+
+![](images/gantry/image17.png){ loading=lazy, width=45% }
+
+Pull the excess line out of the top of the gripper, but not so much that you pull the splice through. we will take up the slack later, when we can turn the gripper on.
+
+![](images/gantry/image18.png){ loading=lazy, width=45% }
+
+Plug in the power anchor. This should now deliver power to the gripper as well. Confirm the green light on the raspberry pi comes on. If not, check for 24v on the input terminals of the larger buck converter on the gripper.
+
+You should already have installed the software on it in the [Raspberry Pi Setup](raspi_setup.md) Guide, but if you have not, do that now. If it is installed, it starts at boot. Start the control panel on your PC and wait for the gripper to connect.
+
+Click on the gripper, and select `Manual Spool Control`.
+Reel the spool in with the `up arrow` key and take up enough slack that you only have about 0.5m of line remaining between the gripper and gantry.
+
+Install the gripper's shell.
+
+Assembly is complete! Congratulations! Move on to the Installation Guide when you're ready to hang it up.
+
+### [Insallation guide](installation_guide.md)

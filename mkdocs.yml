@@ -13,6 +13,8 @@ extra:
       link: https://github.com/nhnifong/cranebot3-firmware/tree/main
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@overengineer7691
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/T5HEvxVgbA
 markdown_extensions:
   - attr_list
   - pymdownx.superfences
