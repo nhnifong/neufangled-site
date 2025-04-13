@@ -142,7 +142,18 @@ You should already have installed the software on it in the [Raspberry Pi Setup]
 Click on the gripper, and select `Manual Spool Control`.
 Reel the spool in with the `up arrow` key and take up enough slack that you only have about 0.5m of line remaining between the gripper and gantry.
 
-Install the gripper's shell.
+![](images/gantry/image25.png){ loading=lazy, width=45% }
+![](images/gantry/image26.png){ loading=lazy, width=45% }
+![](images/gantry/image27.png){ loading=lazy, width=45% }
+
+
+Install the gripper's shell. The half with the slanted line inside goes on the side of the gripper with the slanted motor.
+The bottom edge of each shell half fits along the features of the gripper frame. press it down firmly.
+Secure the shells at the top with four M3x4 screws.
+
+![](images/gantry/image28.png){ loading=lazy, width=45% }
+![](images/gantry/image29.png){ loading=lazy, width=45% }
+![](images/gantry/image30.png){ loading=lazy, width=45% }
 
 Assembly is complete! Congratulations! Move on to the Installation Guide when you're ready to hang it up.
 

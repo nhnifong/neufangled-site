@@ -27,7 +27,7 @@ Partially install the wood screws into every open screw hole in every anchor unt
     ![](images/install/image6.png){ loading=lazy, width=45% }
     
 	!!! note "Note"
-	    You won't have to search for studs since the corners of walls in typical "stick framed" american houses will have at least one 2x4 in the corner on one side or the other. If you believe there is no stud in the corner somehow, you need to install a backer board.  
+	    The corners of walls in typical "stick framed" american houses will have at least one 2x4 in the corner on one side or the other. However, there are cases when two interior walls meet in a cross where the corner may be hollow. If you believe there is no stud in the corner somehow, you either need to install a backer board connected to the nearest studs, or select a flat anchor variant for that corner and pick a nearby stud.
         
 	    If you think you are in a building with steel or aluminum framing, please consult a professional. it is probably possible to bolt the anchor to the stud with the right hardware.
     
@@ -66,12 +66,29 @@ Plug in the anchor via one of the provided outlet remotes. The outlet remote ser
 
 For the power anchor the cover will already have been threaded onto the wire. If it is snapped on already, remove it and slide it down the wire. Gently unspool a few meters of wire so the gantry and gripper can lay on the floor in the center of the room while you install the anchor. Drive in the screws as before, and snap the cover back on and secure it with the M2.5x6 screw.
 
+![](images/install/image10.png){ loading=lazy, width=45% }
+
 ## Tie up
 
 Lay the gripper, gantry, and power wire on the floor in the center of the room. with the gantry oriented so the power line goes straight out towards the anchor and isn't wrapped around anything.
 
-Gently pull out enough line from each anchor to reach the gantry. If you feel bumping while pulling out line, this is normal. it is an electrical phenomenon involving the stepper driver.
+Gently pull out enough line from each anchor to reach the gantry. If you feel bumping while pulling out line, this is normal. It is an electrical phenomenon involving the stepper driver.
+
+![](images/install/image11.png){ loading=lazy, width=45% }
 
 Hook each eyelet to the corresponding hook on the gantry.
 
-Power on the whole system, open the [control panel](usage_guide.md), and select "Auto tension" from the main menu.
+![](images/install/image12.png){ loading=lazy, width=45% }
+![](images/install/image13.png){ loading=lazy, width=45% }
+
+Power on all the anchors using the "all on" button on your outlet remote. Open the [control panel](usage_guide.md), and select "Auto tension" from the main menu.
+
+### Learn when to use the kill switch.
+
+"Auto tension" reels in each line until some tension is detected. If a line gets tight but doesn't stop reeling gently tug on it. If that doesn't stop it, hit the "STOP" button in the control panel. If for some reason it won't stop reeling in, hit the "all off" button on the outlet remote. You may need to repeat the tension calibration steps for the misbehaving motor.
+
+I think it is best to keep the outlet remote in the same place at all times, and circle the "all off" button with a red sharpie. You could mount it to the wall or the desk for example. That way you don't have to think too hard in the event that you need to hit that button.
+
+![](images/install/image14.png){ loading=lazy, width=45% }
+
+The main issue to watch out for is the gantry getting too high and the lines getting too tight. Its a dangerous situation that can quickly lead to a line breaking. If you ever think its getting to tight, hit the "all off" button, aka kill switch. It is nearly always a sign that calibration needs to be improved.
