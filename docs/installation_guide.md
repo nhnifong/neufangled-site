@@ -83,12 +83,18 @@ Hook each eyelet to the corresponding hook on the gantry.
 
 Power on all the anchors using the "all on" button on your outlet remote. Open the [control panel](usage_guide.md), and select "Auto tension" from the main menu.
 
-### Learn when to use the kill switch.
+### Learn when to use the kill switch
 
-"Auto tension" reels in each line until some tension is detected. If a line gets tight but doesn't stop reeling gently tug on it. If that doesn't stop it, hit the "STOP" button in the control panel. If for some reason it won't stop reeling in, hit the "all off" button on the outlet remote. You may need to repeat the tension calibration steps for the misbehaving motor.
-
-I think it is best to keep the outlet remote in the same place at all times, and circle the "all off" button with a red sharpie. You could mount it to the wall or the desk for example. That way you don't have to think too hard in the event that you need to hit that button.
+The "all off" button on the outlet remote serves as a low tech kill switch that turns off all the motorized components.
+It is best to keep the outlet remote in the same place at all times, and circle the "all off" button with a red sharpie. You could mount it to the wall or the desk for example. That way you don't have to think too hard in the event that you need to hit that button.
 
 ![](images/install/image14.png){ loading=lazy, width=45% }
 
-The main issue to watch out for is the gantry getting too high and the lines getting too tight. Its a dangerous situation that can quickly lead to a line breaking. If you ever think its getting to tight, hit the "all off" button, aka kill switch. It is nearly always a sign that calibration needs to be improved.
+"Auto tension" reels in each line until some tension is detected. If a line gets tight but doesn't stop reeling gently tug on it. If that doesn't stop it, hit the "STOP" button in the control panel. The stop button in software commands the motors to keep their current length but doesn't turn anything off. **If for some reason motors are still moving** after this, hit the "all off" button on the outlet remote. You may need to repeat the tension calibration steps for the misbehaving motor.
+
+Hit the kill switch **if the gantry gets too high and the lines are getting too tight**, or if you hear a rising "tink tink" sound. Its a dangerous situation that can quickly lead to something breaking. If this happens it is usually a sign that calibration needs to be improved, but can also becaused by anchor_server.py crashing while reeling in.
+
+Hit the kill switch **if someone becomes entangled in the lines**. But if you can't reach it, You can pull on them till you overpower the motors, which only takes a few kg of force, If any motor is overpowered, the whole system stops.
+If this ever happens, please let me know of the circumstances so I can try to prevent it.
+
+Both the hardware and software of this system are released AS IS without warranty. See the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0) For more detail.
