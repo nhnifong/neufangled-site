@@ -2,6 +2,12 @@ site_name: Cranebot/Stringman Docs
 site_url: https://nhnifong.github.io/neufangled-site
 theme:
   name: material
+  logo: assets/neufangled_icon_outline.png
+  favicon: assets/neufangled_icon_32.png
+  palette:
+    scheme: default
+    primary: indigo
+    accent: green
   features:
     - navigation.footer
     - content.tabs.link
