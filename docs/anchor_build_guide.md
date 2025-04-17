@@ -20,67 +20,77 @@ Print the long hexagonal screwdriver bit holder. You will need a brim when print
 
 ![](images/ag/image4.png){ loading=lazy, width=45% }
 
-Using small dabs of superglue around the ‘shelf’ on the spool, glue the two sides of the spool together. The ‘cup’ of the ring gear should open outwards as shown.  
+Glue the two sides of the spool together with the grooved wheel on the outside. Use small dabs of superglue around the ‘shelf’ on the spool where the solvent would be able to evaporate more easily.
+
 ![](images/ag/image16.png){ loading=lazy, width=45% }
 ![](images/ag/image33.png){ loading=lazy, width=45% }
 
-Cut away the supporting bridge from this U-shaped region in the frame  
-It is unnecessary to cut the bridge out of the hole near it, but harmless to do so.  
-Notice the two protruding ribs in the middle of the anchor frame. We will refer to them as the thick rib, and the thin rib. The spool goes between them.  
-![](images/ag/image15.png){ loading=lazy, width=45% }
-![](images/ag/image18.png){ loading=lazy, width=45% }
-
-If the spool is dry by now, press a 4x13x5 bearing into the hole on the ring gear side.  
-One of the bearings in your kit will have a 4x12mm steel tube pressed into it. Put **two** m4 washers onto the tube and press this into the hole on the other side of the spool.
+Once the glue is dry enough to handle, press a 4x14mm steel tube into one of the 4x13x5 bearings so one end is flush.
+Place two M4 washers onto the tube and press this into the hole on the grooved wheel side of the spool.
 
 ![](images/ag/image21.png){ loading=lazy, width=45% }
 ![](images/ag/image10.png){ loading=lazy, width=45% }
+
+Cut away the sacreficial bridge from this U-shaped region in the frame.  
+
+![](images/ag/image15.png){ loading=lazy, width=45% }
+
+### Noise Dampening
+
+Insert four rubber noise dampeners into the four motor screw holes as show, so that the thicker end is pointed outwards.
+
 ![](images/ag/image25.png){ loading=lazy, width=45% }
 
-Install the m4 x 25 screw partway into the center hole in the thick rib of the anchor frame. You can use the printed screwdriver with a drill to do it more easily.  
-Insert all four M3x10 motors screws in their holes. It’s a lot harder to get to them later, but if one falls out, it’s not impossible. Try to keep them from falling out in the next step.
+Cut out a square piece of adhesive foam grip tape and an 8mm wide strip of tape and stick them in the pictured locations.
+These serve to prevent the motor from making rigid contact with the frame. If it makes rigid contact the robot gets loud because the frame and wall act like a speaker.
 
 ![](images/ag/image32.png){ loading=lazy, width=45% }
-![](images/ag/image24.png){ loading=lazy, width=45% }
+
 
 ## Spool installation
 
-Slide the spool into place. The spool’s geared side faces the thick rib. make sure the protruding bearing is completely seated in its slot, and appears centered from the outside.  
-While holding the spacer in place with [cross locking angled tweezers](https://www.amazon.com/dp/B001BU9MLG), Tighten the M4 center screw all the way down. It will support the inner race of one of the bearings.  
-That was the hardest step, it’s downhill from here.
+Press a bearing into the pictured hole in the narrow rib. Make it flush with both sides.
 
-Press the bearing retainer into the void that remains in the thin rib, and put a very small dab of superglue on it. Not near anything that moves.
+![](images/ag/image24.png){ loading=lazy, width=45% }
+
+Insert all four M3x10 motors screws in their holes. It’s a bit harder to insert them later, but still possible.
+
+![](images/ag/image36.png){ loading=lazy, width=45% }
+
+Insert an M4x12 screw into the bearing that is pressed into the frame. Place two M4 washers onto it on the inside of the rib.
+Now you have to get through the fiddly step of installing the spool without these two washers falling off. they are important. without that spacing, the spool can touch the frame, and that makes noise. you will need to pull the screw back as pictured.
 
 ![](images/ag/image8.png){ loading=lazy, width=45% }
 ![](images/ag/image12.png){ loading=lazy, width=45% }
 
-You can see that one of my four M3x10 motor screws fell out. No worries, It is still possible to put it back, I will show you in the next step. Just fetch it out of the gear with your tweezers.
+Place the belt onto the spoo, then slide the spool into place on the frame. The spool’s grooves side faces the thick rib. Slide the bearing down the slot, while pressing the M4x12 screw on the other side in so the washers don't fall off. when the bearing is fully seated and the spool is straight, the M4 screw will fit into the hole on the flat side of the spool. Screw it in using the printed screwdriver and an appropriately size hex driver.
+
+
+![](images/ag/image37.png){ loading=lazy, width=45% }
+![](images/ag/image38.png){ loading=lazy, width=45% }
+![](images/ag/image39.png){ loading=lazy, width=45% }
+![](images/ag/image40.png){ loading=lazy, width=45% }
+
+That was the hardest step, it’s downhill from here.  
+Press the bearing retainer into the void that remains in the tick rib, and secure it with the flat head M3x6 screw.
+
+![](images/ag/image41.png){ loading=lazy, width=45% }
 
 ##  Motor installation
 
-If it has not been done already, Install the short 4-wire jumper of the MKS\_SERVO42C between the board and stepper. There is only one possible way it will fit.  
-When handling the motor be careful not to ever place it on the PCB. the three buttons can break off.  
+If it has not been done already, Install the short 4-wire jumper of the MKS\_SERVO42C between the board and stepper. There is only one way it will fit.  When handling the motor be careful not to ever place it on the PCB. the three buttons can break off.  
+Install a 20 tooth aluminum pully wheel on the shaft. tighten both set screws. Make it flush with the end of the shaft for now.
+
 ![](images/ag/image28.png){ loading=lazy, width=45% }
 
-Inspect the printed drive gear for flaws such as warping. The quality of this part is very important for keeping noise down. If you see any flaw at all, reprint it. See the print guide for recommended print settings of all parts.  
-Screw a flat head M3x4 set screw most of the way into the hole on the drive gear.  
-Press the drive gear all the way onto the motor shaft with the set screw aligned with the D-shaft’s flat face. Tighten the set screw.  
-Apply a small amount of silicone grease to the drive gear  
+Work the belt over the pully wheel with a tool and install the motor with the larger connector facing downwards. (down is the narrower end of the frame.) Tighten the screws by using the printed screwdriver and the holes in the frame and spool to access the screws.
+
 ![](images/ag/image3.png){ loading=lazy, width=45% }
 ![](images/ag/image14.png){ loading=lazy, width=45% }
+
+Loosen the set screws on the aluminum wheel and adjust it's depth until the wheel runs as quietly as possible. Retighten. 
+
 ![](images/ag/image19.png){ loading=lazy, width=45% }
-
-Place the motor in the frame in the orientation shown below and seat it into place, you might have to wiggle the spool to make the gear teeth mesh.  
-Using the printed screwdriver, tighten all four screws. Two of the screws will align with the holes in the sool, and two will align with a small indentation on the outer limits of the spool.  
-If you do not know which bit fits the screws, find another m3 in your kit and check that.
-
-![](images/ag/image31.png){ loading=lazy, width=45% }
-![](images/ag/image6.png){ loading=lazy, width=45% }
-![](images/ag/image2.png){ loading=lazy, width=45% }
-
-If you have to insert one of your M3x10 screws at this step, you can place it on top of your bit, holding it vertically, and move the part straight down on top with the spool lined up. If that’s too much trouble, then whatever, three screws is enough anyways.
-
-![](images/ag/image1.png){ loading=lazy, width=45% }
 
 Spin your spool slowly and confirm it makes a full rotation without excessive friction. If you feel bumps only when moving fast, ignore that, it’s an electrical effect.
 
