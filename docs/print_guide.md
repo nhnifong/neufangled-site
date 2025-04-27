@@ -11,7 +11,12 @@ Drive gears would be ideal with really good PLA, such as [overture pla professio
  - 100% infill. print on side with a brim.
 
 ## Anchor Assembly (4x)  
-Print four anchors total, you can select either the corner, flat-left, or flat-right variant. Corner variants are meant to be mounted in a wall corner. Flat variants are mounted on a flat wall, with the camera either looking 40 degrees to the left or the right. The camera needs to face into the middle of the work area. Examine your space and determine which types you need. The back plate and cover parts are the only part that differ between the variants
+Print four anchors total, you can select either the corner, flat-left, or flat-right variant. Corner variants are meant to be mounted in a wall corner. Flat variants are mounted on a flat wall, with the camera either looking 45 degrees to the left or the right. The camera needs to face into the middle of the work area. Examine your space and determine which types you need. The back plate and cover parts are the only part that differ between the variants.
+
+For example, the following room would require two corner variants, a flat left variant, and a flat right variant.
+
+![](images/print/image6.png){ loading=lazy, width=45% }
+
 
 ### Back plate (1x)  
 
@@ -23,16 +28,31 @@ Print four anchors total, you can select either the corner, flat-left, or flat-r
 There is built in support bridge near the top for the U-shaped slot for the DC barrel jack to print on. You should trim away the bridge from the DC barrel jack slot after printing.  
 ![](images/print/image2.png){ loading=lazy, width=45% }
 
-### Cover (1x)  
+### Cover Top (1x)  
 
-There is a cover type (corner or flat) for each anchor back plate type
+There is a cover type (corner or flat) for each anchor back plate type. It is divided into two pieces which glue together, called Cover Top and Cover Bottom.
 
- - 2 walls, rectilinear infill, 10%, 20mm brim. The huge brim is there to merge with the feet of the tree supports and stop them falling over.  
- - Tree supports. Branch diameter \= 3, branch diameter angle \= 7  
- - Print on the widest face (the top)  
+ - 2 walls, rectilinear infill, 10%, 10mm brim, just to prevent corner lifting.
+ - Print on the widest face.
  - White or beige color
 
-![](images/print/image4.png){ loading=lazy, width=45% }
+### Cover Bottom (1x)  
+
+The matching bottom plate of the cover variant you are printing.
+
+ - 2 walls, rectilinear infill, 10%, 10mm brim, just to prevent corner lifting.
+ - Print on the widest face.
+ - White or beige color
+
+
+=== "Corner variant cover glue-up"
+
+	![](images/print/image4.png){ loading=lazy, width=45% }
+    
+   
+=== "Flat variant cover glue-up"
+   
+    ![](images/print/image5.png){ loading=lazy, width=45% }
 
 ### Retainer (1x)  
 

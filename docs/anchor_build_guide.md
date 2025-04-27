@@ -88,6 +88,7 @@ Work the belt over the pully wheel with a tool and install the motor with the la
 ![](images/ag/image3.png){ loading=lazy, width=45% }
 ![](images/ag/image14.png){ loading=lazy, width=45% }
 
+There is a cutaway on the top face from which you can more easily access the pully wheel set screw with an allen wrench.
 Loosen the set screws on the aluminum wheel and adjust it's depth until the wheel runs as quietly as possible. Retighten. 
 
 ![](images/ag/image19.png){ loading=lazy, width=45% }
@@ -96,6 +97,20 @@ Spin your spool slowly and confirm it makes a full rotation without excessive fr
 
 ![](images/ag/image17.png){ loading=lazy, width=45% }
 
+## For power anchors only
+
+**One** of the anchors in your robot needs to supply power to the gripper. It doesn’t matter which one, but you need to install slip ring at this point before too many other things get in the way.
+Power is supplied to the gripper via a pvc sheathed wire that takes the place of the fishing line, and is transferred via a slip ring at each end.  
+Take a slip ring and identify the wires that come out of the rotor. Insert these two wires into the metal tube that leads into the center of the spool.
+
+![](images/ag/image46.png){ loading=lazy, width=45% }
+
+Wiggle and push the wires until they come out of the outlet in the spool’s center. Pull them the rest of the way through. Seat the slip ring in its place and secure it with three M3x4 screws.  
+Leave the wires that come out of the spool center hanging for now.
+
+![](images/ag/image47.png){ loading=lazy, width=45% }
+![](images/ag/image48.png){ loading=lazy, width=45% }
+
 ## Power supply circuit
 
 Screw a nut onto the DC barrel Jack. (it should come pre-installed, but may fall off in shipping. It’s important this is done before the wiring.
@@ -103,47 +118,60 @@ Screw a nut onto the DC barrel Jack. (it should come pre-installed, but may fall
 ![](images/ag/image22.png){ loading=lazy, width=45% }
 
 Get one small DC step down converter from your kit (the green one).
-Connect the step down regulator’s inputs to the 24v of the jack. (it’s long leg is negative) with about 2.5 cm of wire between the jack and regulator.  
-Locate the long cable that came with the MKS\_SERVO42C. It has two different ends that are mirrors of each other. Find the end that exactly matches this photo, and cut short all but the red and black wires. We will not be using the others.  
-Solder the black and red leads also to the barrel jack. The motor will receive 24v from this connector.  
-Find one of the pre-made double ended red-black-orange-blue connectors. The only two hanging wires on these should be the red and the black coming from the 4-pin connector. Solder these to the **output** of the DC step down converter.  
+Cut two 2.5cm pieces of 28 guage wire or similar and solder them to GND and IN+
 
 ![](images/ag/image27.png){ loading=lazy, width=45% }
+![](images/ag/image42.png){ loading=lazy, width=45% }
+
+Locate the long cable that came with the MKS\_SERVO42C. It has two different ends that are mirrors of each other. If you use the end that matches this photo, VIN and GND will be red and black. Cut short all but the power and ground wires. We will not be using the others.  
+
+![](images/ag/image43.png){ loading=lazy, width=45% }
+
+Solder the black and red leads also to the barrel jack. (it’s long leg is negative) The motor will receive 24v from this connector.  
+At the same time, connect the step down regulator’s inputs to the 24v of the jack.
+
+![](images/ag/image44.png){ loading=lazy, width=45% }
+
+Find one of the pre-made anchor connectors.. The only two hanging wires on these should be the red and the black coming from the 4-pin connector. Solder these to the **output** of the DC step down converter.  
+
 ![](images/ag/image26.png){ loading=lazy, width=45% }
 
-Place this wiring harness into the frame as shown. Push the barrel jack into the U shaped recess and tighten the nut.
+Place this wiring harness into the frame as shown. Feed the 4-pin connector into the oval shaped hole. Push the barrel jack into the U shaped recess and tighten the nut.
 
 ![](images/ag/image35.png){ loading=lazy, width=45% }
 ![](images/ag/image9.png){ loading=lazy, width=45% }
 
-Plug the wide white plug into the stepper motor control board, and the black serial plug into the small straight standoffs adjacent to it.  
-The serial plug should be connected such that the blue wire in on the pin labeled TX and the orange wire is on the pin labeled RX  
-Lead the final 4 pin plug through the hole to the other side of the frame.  
-The power supply circuit is finished.
+Plug the wide connector into the motor.
+Plug the small connector into the pins just next to the wide connector, with the orange wire on the pin at the edge of the board.
 
-## For power anchors only
+![](images/ag/image45.png){ loading=lazy, width=45% }
 
-One of the anchors in your robot needs to supply power to the gripper. It doesn’t matter which one, but you need to install the power components on it before the raspberry pi.  
-Power is supplied to the gripper via a pvc sheathed wire that takes the place of the fishing line, and is transferred via a slip ring at each end.  
-Take a slip ring and identify the wires that come out of the rotor. Insert these two wires into the metal tube that leads into the center of the spool.  
-Wiggle and push the wires until they come out of the outlet in the spool’s center. Pull them the rest of the way through. Seat the slip ring in its place and secure it with three M3x4 screws.  
-Leave the wires that come out of the spool center hanging for now.
+### Power Anchor
 
-Lead the wires from the back end of the slip ring around the frame to the 5v regulator. Trim excess length and solder them to the regulator’s input side. Note, we want the 24v power going into the slip ring, not the 5v.
+If this is the power anchor, (the one with a slip ring installed) connect the input side of the slip ring to 24v power.
+Be sure to use a stripper suitable for such a small guage of wire
+
+![](images/ag/image49.png){ loading=lazy, width=45% }
 
 ## Raspberry Pi installation
 
-Use the [raspberry pi sd card imager tool](https://www.raspberrypi.com/software/) to create a card that is pre configured with your wifi password, ssh turned on, and a username you can login with.  
+Use the [raspberry pi sd card imager tool](https://www.raspberrypi.com/software/) to create a card that is pre configured with your wifi password, ssh turned on, and a username you can login with. See [Raspberry Pi Setup](raspi_setup.md) for more detail. You can also do this later.  
 Setting “pi” as the username and password is standard practice for people who know that real security is only possible if you throw all the electronics in the lake
 
 Insert the SD card into the Raspberry Pi Zero 2 W. Install an aluminum heatsink on the SOC.  
-Solder a 4 pin straight header on the pins shown in the image.  
-Screw the raspberry pi down to the frame with four m 2.5 x 4 screws. Note the direction in the photo
+Solder a 4 pin straight header on the pins shown in the image, protruding from the back.
 
 ![](images/ag/image23.png){ loading=lazy, width=45% }
+
+!!! tip "Note"
+
+    The 4-pin header's long end should come out of the *back* of the Raspberry Pi Zero 2W
+
+Screw the raspberry pi down to the frame with four m 2.5 x 4 screws. Note the direction in the photo
+
 ![](images/ag/image5.png){ loading=lazy, width=45% }
 
-Connect the 4 pin plug to the straight header with the V+ (red) wire closest to the SD card.
+From the back, feed the 4 pin plug to the straight header and connect it with the V+ (red) wire closest to the SD card.
 
 ![](images/ag/image7.png){ loading=lazy, width=45% }
 
