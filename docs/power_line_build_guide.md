@@ -59,9 +59,13 @@ TODO: add image.
 You were supplied with a custom made counter-twisted wire consisting of two 30awg conductors and some 40lb test braided fishing line.
 Lay it out flat on the floor and gently shake loose any twists or kinks.
 
-Thread 2 meters of your power wire through the 10mm keyring. This should leave 8 meters on the other end. Thread the short end through the keyring again, and gently knot it so the keyring is secured at the 2 meter mark.
+Measure 2 meters from one end and mark the point. Pull apart the fishing line from the wires at this point to make about 10cm of slack.
+Tie an [alpine butterfly](https://www.animatedknots.com/alpine-butterfly-loop-knot) in the fishing line at this location. You can use the plastic screwdriver as an aid when tying the knot. This is a difficult knot, I suggest practicing first on some scrap fishing line. If you haven't bought the cross locking tweezers yet, surely this will change your mind.
 
 ![](images/gantry/image6.png){ loading=lazy, width=45% }
+
+After you pull the knot tight, You should have a small immobile loop in the fishing line and slightly slack wires. Attach the keyring to this loop. This way, the fishing line can bear all the weight, and the wires not be stressed.
+
 ![](images/gantry/image7.png){ loading=lazy, width=45% }
 
 Thread the 2m end of power line down through the center hole of the gantry. Pull it through till the keyring gets stopped in the cone, and then thread the 8m end out through one of the side holes.

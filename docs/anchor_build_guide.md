@@ -11,7 +11,7 @@ First you should have printed the parts according to the [print guide](print_gui
 
  - [Mini screwdriver with a bit set](https://www.amazon.com/dp/B01KB02F9C)  
  - Soldering station
- - [Cross locking tweezers](https://www.amazon.com/dp/B001BU9MLG)  
+ - [Cross locking tweezers](https://www.amazon.com/dp/B001BU9MLG) *Mandatory* you'll jump off a bridge without them.  
  - [Mini side cutters](https://www.amazon.com/dp/B00FZPDG1K)  
  - Super glue ([loctite super glue “professional liquid”](https://www.amazon.com/dp/B07VL6MP94?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1) recommended)
 
@@ -195,5 +195,3 @@ Assembly is complete\!
 Plug in your unit to 24v power and confirm both the motor control screen and raspi green light are on.  
 (Do not run motor calibration, it has been done already and can only be done with a bare shaft)  
 Proceed with all the raspberry pi software setup now before continuing with the rest of the physical installation.
-
-![](images/ag/image29.png){ loading=lazy, width=45% }
