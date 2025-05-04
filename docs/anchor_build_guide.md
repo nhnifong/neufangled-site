@@ -189,7 +189,7 @@ Fold the ribbon back and forth to fit it entirely inside the frame and connect i
 Be careful with the raspberry pi’s ribbon cable retention clip, it is extremely delicate.
 
 ![](images/ag/image20.png){ loading=lazy, width=45% }
-![](images/ag/image11.png){ loading=lazy, width=45% }
+![](images/ag/imag11.png){ loading=lazy, width=45% }
 
 Assembly is complete\!  
 Plug in your unit to 24v power and confirm both the motor control screen and raspi green light are on.  
