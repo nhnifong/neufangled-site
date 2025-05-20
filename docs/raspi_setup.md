@@ -30,6 +30,10 @@ Confirm the wifi credentials are correct.
 
 ![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/raspi/image4.png){ loading=lazy, width=45% }
 
+On the Services tab, enable SSH
+
+![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/raspi/image7.png){ loading=lazy, width=45% }
+
 Click `Save` and then `Yes`
 
 ## Log Into the Pi
@@ -63,12 +67,15 @@ you may have to hit enter a few times during full-upgrade.
 
 When starting with the lite raspi image, you will be missing the following packages, so install those.
 
-    sudo apt install git python3-dev
+    sudo apt install git python3-dev python3-virtualenv
 
 Clone the [cranebot-firmware](https://github.com/nhnifong/cranebot3-firmware) repo
 
     git clone https://github.com/nhnifong/cranebot3-firmware.git
-    cd cranebot-firmware
+    cd cranebot3-firmware
+
+You do not need to follow the instructions in the readme of that repo, as those instructions are for development. Continue with these instructions.
+Follow either the anchor section or gripper section below
 
 ### Anchors
 

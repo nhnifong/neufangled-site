@@ -78,7 +78,18 @@ Press the bearing retainer into the void that remains in the tick rib, and secur
 
 ##  Motor installation
 
-If it has not been done already, Install the short 4-wire jumper of the MKS\_SERVO42C between the board and stepper. There is only one way it will fit.  When handling the motor be careful not to ever place it on the PCB. the three buttons can break off.  
+!!! note "Extra motor setup if you did not buy the hardware kit"
+    If you purchased your motors elsewhere you may need to perform some additional steps.
+
+    1. Install the short 4-wire jumper of the MKS\_SERVO42C between the board and stepper. There is only one way it will fit.
+    2. Connect the motor to 24v power
+    3. Perform motor self calibration with a bare shaft
+    4. Set the mode to UART
+    5. Set the uart baud to 38400
+
+If you bought the hardware kit from us, those steps were performed before the motor was packed, though it can't hurt to confirm the settings.
+
+When handling the motor be careful not to ever place it on the PCB. the three buttons can break off.  
 Install a 20 tooth aluminum pully wheel on the shaft. tighten both set screws. Make it flush with the end of the shaft for now.
 
 ![](https://bucket-neu-2.s3.us-east-1.amazonaws.com/images/ag/image28.png){ loading=lazy, width=45% }
