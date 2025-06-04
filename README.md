@@ -1,4 +1,2 @@
-# [Cranebot / Stringman Documentation](https://nhnifong.github.io/neufangled-site/)
-
-Website providing guides and downloads for the Stringman robot
-[Software](https://github.com/nhnifong/cranebot3-firmware)
+Due to a mistake with git LFS, this repo became broken and it was easier to start with a fresh one than fix it.
+please refer to https://github.com/nhnifong/neufangled-site-2
